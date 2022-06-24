@@ -1,0 +1,55 @@
+.comments-wrapper {
+  .comments-header {
+    margin: 1rem 0;
+    display: flex;
+
+    .comments-header-textarea {
+      flex: 1;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    button {
+      margin-left: 0.5rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .comments-body {
+
+    .comments-comment {
+      margin: 0.5rem 0;
+
+      .comment-username-date {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        .comment-date {
+          color: lightgray;
+        }
+      }
+
+      .comment-content {
+        // \n(엔터)를 태그 안의 텍스트에 적용
+        white-space: pre-wrap;
+        word-break: break-all;
+        margin: 0.4rem auto;
+      }
+    }
+    .comment-username {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: baseline;
+      font-weight: 600;
+    }
+
+  }
+  .comments-footer{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+  }
+}

@@ -1,0 +1,70 @@
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.home-wrapper{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  .home-title{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 0.5s;
+    margin: 15px 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: midnightblue;
+    span{
+      font-size: 2.7rem;
+      font-family: 'Pacifico', cursive;
+    }
+  }
+  .home-contents{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 1s;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #282c34;
+  }
+  .about-project{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 1.5s;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #282c34;
+    text-align: center;
+    span{
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: blue;
+    }
+  }
+  .my-website{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 2.0s;
+    margin: 15px 0;
+    text-align: center;
+    .my-website-title{
+      margin-bottom: 5px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: midnightblue;
+    }
+    a{
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+  }
+}
