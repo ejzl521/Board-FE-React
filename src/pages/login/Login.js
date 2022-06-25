@@ -33,14 +33,18 @@ const Login = () => {
       const redirectUrl = searchParams.get("redirectUrl");
       toast.success(<h3>로그인 성공😎</h3>, {
         position: "top-center",
+        autoClose: 2000
       });
       // redirectUrl이 쿼리스트링으로 존재하면
       // 원래가고자 했던 페이지로 돌아가기
-      if (redirectUrl) {
-        navigate(redirectUrl);
-      } else {
-        navigate("/");
-      }
+      setTimeout(()=> {
+        if (redirectUrl) {
+          navigate(redirectUrl);
+        } else {
+          navigate("/");
+        }
+      }, 2000);
+
     } catch (e) {
       // 서버에서 받은 에러 메시지 출력
       toast.error(e.response.data.message + "😭", {
