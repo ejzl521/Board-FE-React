@@ -67,8 +67,9 @@ const SignUp = () => {
       }}
       validationSchema={validationSchema}
       onSubmit={submit}
+      validateOnMount={true}
     >
-      {({values, handleSubmit, handleChange}) => (
+      {({values, handleSubmit, handleChange, errors}) => (
         <div className="signup-wrapper">
           <ToastContainer/>
           <form onSubmit={handleSubmit} autoComplete="off">
@@ -82,7 +83,7 @@ const SignUp = () => {
                   onChange={handleChange}
                 />
                 <div className="error-message">
-                  <ErrorMessage name="email"/>
+                  {errors.email}
                 </div>
               </div>
               <div className="input-forms-item">
@@ -94,7 +95,7 @@ const SignUp = () => {
                   onChange={handleChange}
                 />
                 <div className="error-message">
-                  <ErrorMessage name="username"/>
+                  {errors.username}
                 </div>
               </div>
               <div className="input-forms-item">
@@ -107,7 +108,7 @@ const SignUp = () => {
                   onChange={handleChange}
                 />
                 <div className="error-message">
-                  <ErrorMessage name="password"/>
+                  {errors.password}
                 </div>
               </div>
               <div className="input-forms-item">
@@ -120,7 +121,7 @@ const SignUp = () => {
                   onChange={handleChange}
                 />
                 <div className="error-message">
-                  <ErrorMessage name="password2"/>
+                  {errors.password2}
                 </div>
               </div>
               <Button
