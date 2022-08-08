@@ -1,11 +1,17 @@
 # React로 게시판 사이트 만들기📝
 - http://duck90.site
 - RestAPI 작성부터 프론트엔드 개발까지 혼자만의 개발 레퍼런스 만들기
+
+#### 메인화면
 ![3](https://user-images.githubusercontent.com/55455103/175644568-c38d560f-b05f-4e90-b5d4-38a889c3927d.gif)
+#### 게시물 전체보기(페이지네이션)
+![shorts42](https://user-images.githubusercontent.com/55455103/183496725-bce88751-8ca3-4351-9082-89b6362ad8c2.gif)
+#### 게시물 상세보기(댓글 기능)
 ![5](https://user-images.githubusercontent.com/55455103/175644637-dbd01261-5dbb-4c8c-900d-15f2206360f6.gif)
 
 # 개발 환경
 - webStorm (React 프로젝트)
+
 
 # Main Libaray
 ### Redux & Redux-persist
