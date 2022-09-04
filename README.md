@@ -43,7 +43,7 @@
 - css 프레임워크
 - 페이지네이션 컴포넌트와 같이 커스텀하기 까다로운 부분을 쉽게 가져다 사용
 ### scss
-- 계층적 CSS 작업을 통해 가독성 및 보일러플레이트 감소
+- 계층적 CSS 작업을 통해 가독성 증가 및 보일러플레이트 감소
 ### react-router-dom v6
 - 라우팅, 동적 라우팅, query parmeter와 uri parameter를 효율적으로 파싱
 ### jwt-decode
